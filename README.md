@@ -1,4 +1,4 @@
-# [Start Bootstrap - Agency](https://startbootstrap.com/template-overviews/agency/)
+# [Start Bootstrap - Agency](https://startbootstrap.com/themes/agency/)
 
 Forked from https://github.com/BlackrockDigital/startbootstrap-agency
 
