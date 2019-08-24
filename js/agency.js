@@ -51,4 +51,15 @@
         return (new Date()).getFullYear();
     })
 
+    $("#js-rotating").Morphext({
+        // The [in] animation type. Refer to Animate.css for a list of available animations.
+        animation: "bounceIn",
+        separator: ",",
+        // The delay between the changing of each phrase in milliseconds.
+        speed: 3000,
+        complete: function () {
+            // Called after the entrance animation is executed.
+        }
+    });
+
 })(jQuery); // End of use strict

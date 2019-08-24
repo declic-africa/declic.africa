@@ -15,6 +15,9 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/morphext/morphext.css" rel="stylesheet" type="text/css">
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'
@@ -66,10 +69,26 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Qui fait la différence</div>
             <div class="intro-heading text-uppercase">Declic</div>
+            <div class="intro-lead-in">
+
+                <span id="js-rotating">
+qui ouvre des horizons,
+qui fait la différence,
+qui trace un chemin,
+qui met en mouvement,
+qui donne une raison,
+qui assure la réussite,
+qui réalise,
+qui embellit l'entourage,
+qui enthousiasme,
+qui illumine,
+qui met sur les rails,
+                    </span>
+            </div>
 
         </div>
+
     </div>
 </header>
 
@@ -128,7 +147,8 @@
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
                 <h4 class="service-heading">Application web dynamique</h4>
-                <p class="text-muted">Dans un univers où le numérique permet de connecter les personnes, nous avons à coeur de déployer des solutions au service de l'humain.</p>
+                <p class="text-muted">Dans un monde toujours plus tourné vers le numérique, nous avons à coeur de
+                    déployer des solutions au service de l'humain.</p>
             </div>
             <div class="col-md-6">
             <span class="fa-stack fa-4x">
@@ -136,7 +156,8 @@
               <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
             </span>
                 <h4 class="service-heading">Conseil numérique</h4>
-                <p class="text-muted">Nous partons toujours des besoins et analysons la pertience. Notre expérience nous permet de vous conseiller.</p>
+                <p class="text-muted">Nous partons toujours des besoins et analysons ensemble la meilleure façon d'y
+                    parvenir. Notre expérience nous permet de vous conseiller réalistement.</p>
             </div>
         </div>
     </div>
@@ -155,29 +176,54 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+                    <img class="mx-auto rounded-circle" src="img/team/madi.png" alt="">
                     <h4>Madi Nikiema</h4>
                     <p class="text-muted">Entrepreneur, gestion de projet</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="img/team/fabien.jpg" alt="">
+                    <h4>Fabien Udriot</h4>
+                    <p class="text-muted">Ingénieur IT</p>
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item">
                             <a href="https://twitter.com/fudriot">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/fabarea">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
                     </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-                    <h4>Fabien Udriot</h4>
-                    <p class="text-muted">Ingénieur IT</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<form name="contact" method="POST" data-netlify="true">
+    <p>
+        <label>Your Name: <input type="text" name="name"/></label>
+    </p>
+    <p>
+        <label>Your Email: <input type="email" name="email"/></label>
+    </p>
+    <p>
+        <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+        </select></label>
+    </p>
+    <p>
+        <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+</form>
 
 <!-- Contact -->
 <section id="contact">
@@ -185,7 +231,8 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Nous contacter</h2>
-                <h3 class="section-subheading text-muted">Notre bureau se trouve à Pissy. N'hésitez pas à nous contacter pour un contact direct au numéro de
+                <h3 class="section-subheading text-muted">Notre bureau se trouve à Ouagadougou. N'hésitez pas à nous
+                    contacter par email pour un contact direct au numéro de
                     téléphone.</h3>
             </div>
         </div>
@@ -197,6 +244,7 @@
                             <div class="form-group">
                                 <input class="form-control"
                                        id="name"
+                                       name="name"
                                        type="text"
                                        placeholder="Nom *"
                                        required="required"
@@ -206,6 +254,7 @@
                             <div class="form-group">
                                 <input class="form-control"
                                        id="email"
+                                       name="email"
                                        type="email"
                                        placeholder="Adresse e-mail *"
                                        required="required"
@@ -215,6 +264,7 @@
                             <div class="form-group">
                                 <input class="form-control"
                                        id="phone"
+                                       name="phone"
                                        type="tel"
                                        placeholder="Votre téléphone">
                                 <p class="help-block text-danger"></p>
@@ -224,6 +274,7 @@
                             <div class="form-group">
                                 <textarea class="form-control"
                                           id="message"
+                                          name="message"
                                           placeholder="Message *"
                                           required="required"
                                           data-validation-required-message="Saisir votre message."></textarea>
@@ -249,11 +300,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Declic <span id="current-year"></span></span>
             </div>
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-8" style="text-align: right">
+                <a href="mailto:contact@declic.africa">contact@declic.africa</a>
+                &nbsp; &nbsp; &bull; &nbsp; &nbsp;
+                <a href="tel:+22678876787">+226 78 87 67 87 </a>
+                &nbsp; &nbsp; &bull; &nbsp; &nbsp;
+                Declic Sàrl <span id="current-year"></span>
             </div>
         </div>
     </div>
@@ -270,6 +323,8 @@
 <!-- Contact form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
+
+<script src="vendor/morphext/morphext.min.js"></script>
 
 <!-- Custom scripts for this template -->
 <script src="js/agency.min.js"></script>

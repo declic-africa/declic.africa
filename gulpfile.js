@@ -30,11 +30,23 @@ gulp.task('vendor', function(cb) {
     ])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome
-  gulp.src([
-      './node_modules/@fortawesome/**/*',
+    // Font Awesome
+    gulp.src([
+        './node_modules/@fortawesome/**/*',
     ])
-    .pipe(gulp.dest('./vendor'))
+        .pipe(gulp.dest('./vendor'))
+
+    // Animate.css
+    gulp.src([
+        './node_modules/animate.css/*.css',
+    ])
+        .pipe(gulp.dest('./vendor/animate.css'))
+
+    // Morphext
+    gulp.src([
+        './node_modules/morphext/dist/*',
+    ])
+        .pipe(gulp.dest('./vendor/morphext'))
 
   // jQuery
   gulp.src([
