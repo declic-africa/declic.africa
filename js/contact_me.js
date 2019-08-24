@@ -44,7 +44,7 @@ $(function() {
           $('#success > .alert-danger').append($("<strong>").text("Désolé " + firstName + ", le serveur mail n'a pas répondu correctement."));
           $('#success > .alert-danger').append('</div>');
           //clear all fields
-          $('#formContact').trigger("reset");
+          $('#formContact').trigger('reset');
         },
         complete: function() {
           setTimeout(function() {
