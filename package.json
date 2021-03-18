@@ -1,6 +1,6 @@
 {
-  "title": "Agency",
-  "name": "startbootstrap-agency",
+  "title": "Declic agency",
+  "name": "africa-declic",
   "version": "5.0.4",
   "description": "Agency is a one page HTML theme for Bootstrap.",
   "keywords": [
@@ -12,10 +12,6 @@
     "template"
   ],
   "homepage": "https://startbootstrap.com/template-overviews/agency",
-  "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
-    "email": "feedback@startbootstrap.com"
-  },
   "license": "MIT",
   "author": "Start Bootstrap",
   "contributors": [
