@@ -1,6 +1,24 @@
-# [Start Bootstrap - Agency](https://startbootstrap.com/themes/agency/)
+# [Declic](https://www.declic.africa)
 
 Forked from https://github.com/BlackrockDigital/startbootstrap-agency
+
+## Installation
+
+```shell
+git clone git@github.com:declic-africa/declic.africa.git
+cd declic.africa
+npm install
+npm run dev
+```
+
+## Create a PR
+
+```shell
+git checkout -b feature/add-new-coworker
+git add . 
+git commit -m "Add new coworker"
+git push --set-upstream origin feature/add-new-coworker
+```
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-agency/)**
 
