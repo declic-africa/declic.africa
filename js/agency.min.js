@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Declic agency v5.0.4 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2024 Start Bootstrap
+ * Copyright 2013-2026 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/africa-declic/blob/master/LICENSE)
  */
 
